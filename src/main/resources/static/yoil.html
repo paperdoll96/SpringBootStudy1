@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <a href="http://localhost:8080/getYoil">요일을 알고 싶으면 클릭!!!</a>  <!-- get -->
+</p>
+<p>
+    <form action="http://localhost:8080/getYoil" method="get"> <!-- get(디폴트), post 둘다 가능
+            action이 없으면 자기 자신에게 전송, 그럼 페이지는 자동으로 리프레쉬(새로고침)-->
+    <input type="text" name="year">년</br>
+    <input type="text" name="month">월</br>
+    <input type="text" name="day">일</br>
+    <input type="submit" value="보내기">
+</form>
+</p>
+</body>
+</html>
