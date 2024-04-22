@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller // 1. 원격 프로그램으로 등록!
-public class HelloController { // 원격 프로그램
+public class HomeController { // 원격 프로그램
     // 2. URL 과 메서드를 연결
-    @RequestMapping("/hello")
-    public void main() { // static이 없어도 되는 이유는 톰캣이 자동으로 생성해줌
-        System.out.println("Hello~");
+    @RequestMapping("/")
+    public String main()
+    {
+        return "index"; // templates/index.html
     }
 }

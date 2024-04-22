@@ -1,0 +1,35 @@
+* {
+    magin : 0;
+    padding : 0;
+}
+
+#header > ul {
+    background-color : black;
+    color:#808080;
+}
+
+
+
+#header > ul > li {
+    list-style : none;
+    display : inline-block;
+}
+
+#header > ul > li > a {
+    text-decoration : none;
+    padding : 10px;
+    display : block;
+}
+
+#header > ul > li > a:visited {
+    color:#808080;
+}
+
+#header > ul > li > a:hover {
+    color : white;
+}
+
+#footer {
+    text-align : center;
+    width : 100%;
+}
