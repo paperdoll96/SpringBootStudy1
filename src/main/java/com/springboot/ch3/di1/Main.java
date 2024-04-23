@@ -1,12 +1,43 @@
 package com.springboot.ch3.di1;
 
+import lombok.experimental.Accessors;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
 // Car 클래스 정의: 자동차의 기본 형태를 나타내는 클래스
-class Car {}
+class Car {
+    @Autowired
+    Engine engine;
+    Door door;
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "engine=" + engine +
+                ", door=" + door +
+                '}';
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
+
+    public Door getDoor() {
+        return door;
+    }
+
+    public void setDoor(Door door) {
+        this.door = door;
+    }
+}
 
 // Engine 클래스 정의: 자동차의 엔진을 나타내는 클래스
 class Engine {}
