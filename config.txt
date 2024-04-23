@@ -1,0 +1,3 @@
+car=com.springboot.ch3.di1.SportCar
+engine=com.springboot.ch3.di1.Engine
+door=com.springboot.ch3.di1.Door
